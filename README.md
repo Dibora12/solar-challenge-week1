@@ -1,5 +1,4 @@
 Solar data discovery
-
 This repository contains the work of analyzing solar farm data from Benin, Sierra Leone, and Togo.
 
 🔧 Setup Instructions
