@@ -1,9 +1,12 @@
-Solar data discovery
-This repository contains the work of analyzing solar farm data from Benin, Sierra Leone, and Togo.
+# Solar Challenge - Week 1
 
-🔧 Setup Instructions
-git clone https://github.com/Dibora12/solar-challenge-week1.git
-cd solar-data_discovery
+## 🌱 Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   cd solar-challenge-week1
+   git clone https://github.com/Dibora12/solar-challenge_week1.git
+cd solar-challenge_week1
 python -m venv .venv
 
 # Activate the virtual environment
@@ -13,12 +16,32 @@ source .venv/bin/activate
 .venv\Scripts\activate
 
 pip install -r requirements.txt
-📁 Project Structure
+
+📁## 📁 Project Structure
+```
 solar-data_discovery/
-├── notebooks/           # EDA notebooks for each country
-├── app/                 # Streamlit dashboard code
-├── data/                # Local storage for CSVs (not committed to Git)
-├── .github/workflows/   # CI/CD pipeline configuration
-├── scripts/             # Utility scripts
-├── src/                 # Source code
-└── tests/               # Test files
+├── notebooks/         # Jupyter notebooks (EDA & visualizations)
+│   ├── benin_eda.ipynb
+│   ├── sierra_leone_eda.ipynb
+│   ├── togo_eda.ipynb
+│   └── figures/
+├── app/               # Streamlit dashboard code
+│   ├── main.py
+│   └── utils.py
+├── data/              # Raw and cleaned CSVs (local, not committed)
+├── .github/
+│   └── workflows/
+│       └── ci.yml     # CI/CD pipeline config
+├── scripts/           # Utility scripts
+├── src/               # Core processing logic
+├── tests/             # Unit and integration tests
+└── requirements.txt   # Project dependencies
+```
+## 🧪 Running the Analysis
+
+Open notebooks:
+```
+jupyter notebook notebooks/
+```
+View visualizations:
+   - Located in notebooks/figures/
